@@ -1,0 +1,176 @@
+*
+    margin: 0
+    padding: 0
+
+body 
+    background-color: #121826
+    padding-top: 182px
+    display: flex
+    flex-direction: column
+    align-items: center
+    font-family: "Inter", sans-serif
+    overflow: hidden
+    .img-1
+        position: absolute
+        left: -50%
+        top: -50%
+        z-index: -10
+    .img-2
+        position: absolute
+        right: -50%
+        bottom: -50%
+
+form
+    width: 456px
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 40px
+    background-color: #212936
+    border-radius: 12px
+    border: solid 1px #4D5562
+    margin-bottom: 20px
+    .tab
+        width: 100%
+        display: none
+        &.active
+            display: block
+        .title
+            font-size: 1.25rem 
+            color: #E5E7EB
+            margin-bottom: 40px
+            font-weight: 700
+        .input-container
+            width: 100%
+            display: flex
+            flex-direction: column
+            margin-bottom: 24px
+            label
+                font-size: 0.75rem
+                color: #A1A1A9
+                margin-bottom: 8px
+            input
+                width: 100%
+                border-radius: 12px
+                padding: 16px 0 16px 16px
+                background-color: #212936
+                border: solid 2px #4D5562
+                outline: none
+                color: #4D5562
+                font-weight: 600
+                font-size: 0.75rem
+                &::placeholder
+                    color: #4D5562
+                &.invalid
+                    background-color: #ef233c
+                    border: solid 2px #d90429
+                    color: #d90429
+                    &::placeholder
+                        color: #d90429
+            .error
+                display: none
+                color: #d90429
+                font-size: 0.75rem
+                margin-top: 10px
+                margin-left: 10px
+                &.active
+                    display: block
+
+        .topic-container
+            display: grid
+            row-gap: 16px
+            .topic
+                background-color: #394150
+                border-radius: 12px
+                border: solid 1px #4D5562
+                padding: 16px 0 16px 16px
+                color: #A1A1A9
+                font-size: 0.875rem
+                text-align: left
+                cursor: pointer
+                &.selected
+                    background-color: #652CD1
+                    border: solid 1px #845EEE
+                    color: #E5E7EB
+    .btn-container
+        width: 100%
+        display: flex
+        justify-content: center
+        margin-top: 12px
+        button
+            background-color: #652CD1
+            border: none
+            outline: none
+            border-radius: 38px
+            padding: 12px 36px 12px 36px
+            text-align: center
+            color: #E5E7EB
+            font-size: 0.75rem
+            font-weight: 600
+            cursor: pointer
+    .summary-container
+        display: flex
+        margin-bottom: 5px
+        p
+            color: #A1A1A9
+            font-size: 1rem
+        span
+            color: #FFFFFF
+            font-size: 1rem
+            margin-left: 5px
+    .topics-summary
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        margin-top: 11px
+        p
+            color: #A1A1A9
+            font-size: 1rem
+        ul
+            margin-top: 5px
+        li
+            color: #E5E7EB
+            font-size: 1rem
+            margin-left: 30px
+            margin-bottom: 5px
+
+.steps
+    display: inline-flex
+    gap: 24px
+    align-items: center
+    margin-left: -90px
+    .step-container
+        display: inline-flex
+        gap: 11px
+        .step
+            width: 10px
+            height: 10px
+            background-color: #394150
+            border-radius: 50%
+            &.active
+                box-shadow: 0px 0px 0px 5px rgba(132,94,238,0.3)
+                background-color: #743EE4
+            &.completed
+                background-color: #743EE4
+    .step-counter
+        color: #394150
+        font-size: 0.75rem
+        font-weight: 500
+
+@media (min-width: 1200px)
+    body 
+        .img-1
+            left: -30%
+            top: -50%
+        .img-2
+            right: -30%
+            bottom: -50%
+
+@media (min-width: 1400px)
+    body 
+        .img-1
+            left: -20%
+            top: -40%
+        .img-2
+            right: -20%
+            bottom: -40%
