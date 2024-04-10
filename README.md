@@ -9,10 +9,10 @@ A multi-step register form made with HTML, SASS and JavaScript. This is a challe
 * JavaScript
 
 ### First Step:
-![first-step](https://github.com/nacho1520/faq-page/blob/main/public/shot.png)
+![first-step](https://github.com/nacho1520/multistep-form/blob/main/public/first-step.png)
 
 ### Second Step:
-![second-step](https://github.com/nacho1520/faq-page/blob/main/public/shot.png)
+![second-step](https://github.com/nacho1520/multistep-form/blob/main/public/second-step.png)
 
 ### Summary:
-![summary](https://github.com/nacho1520/faq-page/blob/main/public/shot.png)
+![summary](https://github.com/nacho1520/multistep-form/blob/main/public/summary.png)
